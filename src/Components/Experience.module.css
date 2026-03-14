@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.experience {
+  padding: 40px;
+  background: black;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 35px;
+  /* padding-bottom: 30px; */
+  font-family: "Poppins", sans-serif;
+}
+
+h3{
+  font-size: 22px;
+}
+
+.timeline {
+  position: relative;
+}
+
+/* vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 3px;
+  height: 100%;
+  background: #ccc;
+  transform: translateX(-50%);
+}
+
+.timelinerow {
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.company {
+  text-align: right;
+  padding-right: 20px;
+  font-size: 15px;
+  /* font-weight: bold; */
+  color: #bebcbc;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  background: white;
+  border: 3px solid #444258;
+  border-radius: 50%;
+}
+
+.details {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.year {
+  color: #959393;
+  font-size: 16px;
+}
+
+.details h3 {
+  color: orange;
+  margin: 5px 0;
+}
+
+.details p {
+  color: #444;
+  line-height: 1.6;
+   width: 460px; 
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .experience {
+    padding: 25px 15px;
+  }
+
+  .subtitle {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .timeline::before {
+    left: 25px;
+  }
+
+  .timelinerow {
+    grid-template-columns: 25px 1fr;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    align-items: flex-start;
+  }
+
+  h3 {
+    width: 220px;
+  }
+
+  .company {
+    text-align: left;
+    padding-right: 0;
+    /* padding-left: 15px; */
+    font-size: 14px;
+    order: 2;
+  }
+
+  .line {
+    order: 1;
+  }
+
+  .circle {
+    width: 15px;
+    height: 15px;
+    border-width: 2px;
+  }
+
+  .details {
+    text-align: start;
+    padding-left: 15px;
+    order: 3;
+    width: 250px;
+  }
+
+  .year {
+    font-size: 14px;
+  }
+
+  .details h3 {
+    font-size: 16px;
+    margin: 4px 0;
+  }
+
+  .details p {
+    width: 250px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .experience {
+    padding: 25px 15px;
+  }
+  
+  .subtitle {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .timeline::before {
+    left: 25px;
+  }
+  
+  .timelinerow {
+    grid-template-columns: 25px 1fr;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    align-items: flex-start;
+    /* gap: 15px; */
+  }
+  
+  
+  .details {
+    text-align: left;
+    padding-left: 15px;
+    order: 3;
+    width: 400px; 
+    line-height: 1.5;
+  }
+  
+  .company {
+    text-align: left;
+    padding-right: 0;
+    font-size: 14px;
+    order: 2;
+    width: 100%;
+  }
+  
+  .line {
+    order: 1;
+  }
+  
+  .circle {
+    width: 15px;
+    height: 15px;
+    border-width: 2px;
+  }
+  
+  /* NO FIXED WIDTHS */
+  .year {
+    font-size: 14px;
+  }
+  
+  .details h3 {
+    font-size: 16px;
+    margin: 4px 0;
+    width: 400px; 
+  }
+  
+  .details p {
+    font-size: 14px;
+    line-height: 1.5;
+    width: 500px; 
+  }
+}
