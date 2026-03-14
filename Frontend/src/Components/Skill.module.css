@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.sectioned p{
+  color: white;
+  font-size: 40px;
+  padding: 20px;
+
+}
+
+.sectioned { 
+  background-color: black;
+  padding-bottom: 35px;
+  text-align: center;
+  height: 650px;
+ }
+
+.back {
+
+  color: white;
+  width: 80%;
+  margin: auto;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 30px;
+  line-height: 1.7;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progressbar {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.progress {
+  height: 8px;
+  background: yellow;
+  border-radius: 10px;
+  /* transition: 'width' 1.5s ease-in-out; */
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .sectioned {
+    height: 100vh;
+    padding: 20px 15px 25px;
+  }
+  
+  .sectioned p {
+    font-size: 28px;
+    padding: 15px;
+  }
+  
+  .back {
+    width: 100%;
+    padding: 25px 15px;
+    /* grid-template-columns: 1fr; */
+    gap: 25px;
+    line-height: 1.6;
+  }
+  
+  .title {
+    padding: 0;
+  }
+  
+  .progressbar {
+    height: 6px;
+  }
+  
+  .progress {
+    height: 6px;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .sectioned {
+    height: 90vh;
+    padding: 35px 30px 30px;
+  }
+  
+  .sectioned p {
+    font-size: 36px;
+    padding: 18px;
+  }
+  
+  .back {
+    width: 95%;
+    padding: 35px 25px;
+    gap: 28px;
+    line-height: 1.65;
+  }
+  
+  .progressbar {
+    height: 7px;
+  }
+  
+  .progress {
+    height: 7px;
+  }
+}
