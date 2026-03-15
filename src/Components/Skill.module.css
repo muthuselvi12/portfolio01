@@ -55,7 +55,7 @@
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .sectioned {
-    height: 100vh;
+    height: 500px;
     padding: 20px 15px 25px;
   }
   

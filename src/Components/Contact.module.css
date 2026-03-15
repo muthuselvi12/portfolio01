@@ -95,7 +95,7 @@ textarea {
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .contactcontainer {
     min-height: 100vh;
-    padding: 40px 20px;
+    padding:  17px;
   }
   
   .content {
@@ -103,7 +103,7 @@ textarea {
   }
   
   .contacttitle {
-    font-size: 32px;
+    font-size: 31px;
     margin-bottom: 30px;
   }
   

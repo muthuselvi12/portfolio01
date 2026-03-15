@@ -87,10 +87,10 @@ border-radius: 10px;
   }
   
   .images {
-    height: 400px;
+    height: 450px;
     margin: 5px;
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
   }
   
   .intro {

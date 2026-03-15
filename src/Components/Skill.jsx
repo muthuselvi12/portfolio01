@@ -28,7 +28,7 @@ const Skill = () => {
   return (
     <>
       <section className={Skilled.sectioned} id="skill">
-        <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <p data-aos="fade-up" data-aos-anchor-placement="top">
           <b>Here's what I'm good at</b>
         </p>
         <div className={Skilled.back} data-aos="fade-up">
