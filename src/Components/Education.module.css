@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hole {
+  padding: 25px;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+.edutant {
+  font-size: 40px;
+  width: 400px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+
+.whole {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ed img{
+  width: 100%;
+  height: 100%;
+}
+
+.ed{
+ width: 500px;
+ height: 500px;
+}
+
+
+.clg {
+  color: rgba(255, 255, 255, 0.703);
+}
+
+.date {
+  color: orange;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+  margin: 20px;
+}
+
+.divs {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  height: 150px;
+  width: 500px;
+  background-color: rgba(49, 44, 44, 0.311);
+  color: white;
+  line-height: 1.9;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.divs:hover{
+  transform: translatey(-8px);
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .hole {
+    padding: 20px;
+  }
+  
+  .edutant {
+    font-size: 32px;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .whole {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .ed {
+    width: 320px;
+    height: 320px;
+  }
+  
+  .education {
+    margin: 15px;
+  }
+  
+  .divs {
+    width: 100%;
+    max-width: 350px;
+    height: 140px;
+    padding: 18px;
+    margin: 15px 0;
+    font-size: 15px;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hole {
+    padding: 22px;
+  }
+  
+  .edutant {
+    font-size: 36px;
+    width: 380px;
+  }
+  
+  .whole {
+    gap: 25px;
+    flex-direction: row;
+  }
+  
+  .ed {
+    width: 550px;
+    height: 450px;
+  }
+  
+  .divs {
+    width: 480px;
+    height: 160px;
+    padding: 22px;
+    margin: 18px;
+    font-size: 16px;
+  }
+}
